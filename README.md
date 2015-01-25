@@ -13,8 +13,6 @@ Development
 ```bash
 git clone https://github.com/liamcurry/pomodori.git && cd pomodori
 npm install
-npm run build
-npm run test
 npm run watch
 ```
 
