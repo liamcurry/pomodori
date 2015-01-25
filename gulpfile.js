@@ -62,7 +62,7 @@ gulp.task('js:transform', ['js:style'], function() {
 		.pipe(gulp.dest('build'))
 })
 
-gulp.task('js:test', ['js:transform'], function() {
+gulp.task('test', ['js:transform'], function() {
 	return gulp.src('build/js/**/*_test.js')
 		.pipe(plumber())
 		.pipe($.mocha({
@@ -138,6 +138,8 @@ gulp.task('size', ['manifest'], function() {
 gulp.task('build', ['size'])
 gulp.task('default', ['build'])
 gulp.task('watch', ['build'], function() {
+	var liveServer = require('live-server')
+	liveServer.start(8181, 'dist', false)
 	gulp.watch('src/**/*.*', ['build'])
 })
 
