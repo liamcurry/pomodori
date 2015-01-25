@@ -7,9 +7,22 @@ Pomodori is a simple [Pomodoro timer][pomodoro] written in Javascript with
 [pomodoro]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [mithril]: http://lhorie.github.io/mithril/
 
+Development
+-----------
+
+```bash
+git clone https://github.com/liamcurry/pomodori.git && cd pomodori
+npm install
+npm run build
+npm run test
+npm run watch
+```
+
 TODO
 ----
 
+- [ ] Better documentation
+- [ ] `gh-pages` branch
 - [ ] Benchmarks
 - [ ] Tests
 - [ ] Toggle to show/hide settings
