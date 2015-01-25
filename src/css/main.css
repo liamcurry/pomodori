@@ -1,0 +1,45 @@
+:root {
+	--background-color: #D91E18;
+	--color: white;
+	--font-family: Helvetica, Arial, sans-serif;
+	--border-color: rgba(0, 0, 0, .4);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--color);
+	font-family: var(--font-family);
+	text-align: center;
+	padding: 50px;
+}
+
+.button {
+}
+
+.hidden {
+	display: none;
+}
+
+.block {
+	display: block;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.symbol {
+	fill: white;
+}
+
+input {
+	border: 1px solid var(--border-color);
+	padding: 10px;
+}

@@ -1,0 +1,17 @@
+doctype html
+html(manifest='manifest.txt')
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	title Pomodoro
+	meta(name='viewport', content='width=device-width', initial-scale='1')
+	link(rel='stylesheet', href='index.min.css')
+	.hidden
+		//- inject:svg
+		//- endinject
+	#app
+		h1
+			svg.symbol.block.center
+				use(xlink:href='#tomato')
+			| Pomodori
+		#main
+	script(src='index.min.js')
